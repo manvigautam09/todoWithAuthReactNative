@@ -12,12 +12,14 @@ import {store} from './src/store';
 import {Provider} from 'react-redux';
 
 import Demonstration from './src/components/demonstartion';
+import PhoneSignIn from './src/components/phoneAuthService';
 
 const App = () => {
   return (
     <Provider store={store}>
       <SafeAreaView>
         <Demonstration />
+        <PhoneSignIn />
       </SafeAreaView>
     </Provider>
   );

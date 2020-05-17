@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  View,
-  Text,
-  TextInput,
-  Button,
-} from 'react-native';
+import {StyleSheet, View, Text, TextInput, Button} from 'react-native';
 import {useDispatch} from 'react-redux';
 import {useSelector} from 'react-redux';
 import {saveInputData, getDemonstartionDetails} from '../store/actions';
@@ -25,7 +18,7 @@ const Demonstration = () => {
   }));
 
   return (
-    <SafeAreaView>
+    <>
       <Text style={styles.title}>Sample demonstartion of redux-thunk</Text>
       <View style={styles.userView}>
         <TextInput
@@ -49,7 +42,7 @@ const Demonstration = () => {
           <Text style={styles.details}>{data.title}</Text>
         )}
       </View>
-    </SafeAreaView>
+    </>
   );
 };
 
